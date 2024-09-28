@@ -1,0 +1,38 @@
+/* Main section styles */
+main {
+    width: 800px;
+    margin: 0 auto; /* Centering the main content */
+}
+
+/* Aside section styles */
+aside {
+    width: 250px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto; /* Maintaining aspect ratio */
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+/* Existing profile image styling */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Paragraph padding reset */
+p {
+    padding: 0;
+}
