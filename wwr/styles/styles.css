@@ -138,6 +138,7 @@ footer {
 
 footer p {
     margin: 10px 0;
+    color:var(--black-color)
 }
 
 .social-media a img {
