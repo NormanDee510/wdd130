@@ -12,6 +12,18 @@
     --font-family: 'Lato', sans-serif;
 }
 
+/* Header Styles */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 119, 190, 0.8);
+}
+
+header img {
+    max-width: 150px;
+}
 /* Global Styles */
 body {
     margin: 0;
@@ -32,17 +44,17 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 119, 190, 0.8);
-}
+
 
 .logo img {
     width: 150px; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* This pushes the nav items to the far right */
+    gap: 20px; /* This adds space between the nav items */
 }
 
 nav a {
