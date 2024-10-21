@@ -1,4 +1,3 @@
-
 /* Define CSS Variables */
 :root {
     --ocean-blue: #0077be; /* Ocean Blue */
@@ -24,6 +23,7 @@ header {
 header img {
     max-width: 150px;
 }
+
 /* Global Styles */
 body {
     margin: 0;
@@ -34,7 +34,6 @@ body {
     margin: 0 auto;
 }
 
-
 a {
     color: var(--sandy-beige); /* Sandy Beige for links */
     text-decoration: none;
@@ -44,12 +43,9 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
 .logo img {
     width: 150px; 
 }
-
 
 nav {
     display: flex;
@@ -141,6 +137,66 @@ section h2 {
     border-radius: 10px;
 }
 
+/* Contact Us Styles */
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: #000000;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    color: var(--sunset-orange);
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--ocean-blue);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--ocean-blue);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical; 
+    min-height: 150px; 
+}
+
+.contact-form button {
+    background-color: var(--sunset-orange);
+    color: var(--sandy-beige);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--river-green);
+}
+
 /* Footer Styles */
 footer {
     background-color: rgba(0, 119, 190, 0.8); /* Semi-transparent Ocean Blue */
@@ -150,7 +206,7 @@ footer {
 
 footer p {
     margin: 10px 0;
-    color:var(--black-color)
+    color: var(--black-color);
 }
 
 .social-media a img {
@@ -162,10 +218,10 @@ footer p {
 .social-media a {
     display: inline-block;
 }
+
 .headings {
     text-align: center; /* Centers the text horizontally */
     margin: 0 auto; /* Adds automatic margin to ensure it's centered */
-    text-align: center;
 }
 
 h1, h2 {
@@ -176,3 +232,27 @@ p {
     text-align: center;
     color: var(--ocean-blue);
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center the navigation items */
+    }
+
+    .contact-form {
+        width: 90%; /* Allow form to be responsive on smaller screens */
+    }
+}
+
+/* Employee Image Styles */
+.employee-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set a max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add some rounding for aesthetics */
+    display: block; /* Ensure it's treated as a block element */
+    margin: 20px auto; /* Center it on the page with auto margins */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
