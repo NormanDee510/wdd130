@@ -236,7 +236,8 @@ form button:hover {
     }
 }
 
-/* .contact-form {
+
+ .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,7 +277,7 @@ form button:hover {
 
 .contact-form button:hover {
     background-color: var(--river-green);
-} */
+} 
 
 /* Footer Styles */
 footer {
@@ -328,11 +329,11 @@ p {
 
 /* Employee Image Styles */
 .employee-image {
-    width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Set a max width for larger screens */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add some rounding for aesthetics */
-    display: block; /* Ensure it's treated as a block element */
-    margin: 20px auto; /* Center it on the page with auto margins */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+    display: block; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
