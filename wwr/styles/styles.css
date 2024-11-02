@@ -324,6 +324,7 @@ p {
 
     .contact-form {
         width: 90%; /* Allow form to be responsive on smaller screens */
+        text-decoration: #000000;
     }
 }
 
