@@ -328,12 +328,11 @@ p {
 
 /* Employee Image Styles */
 .employee-image {
-    width: 100%; /* Making the image responsive */
-    max-width: 400px; /* Setting a max width for larger screens */
-    height: auto; /* Maintaining aspect ratio */
-    border-radius: 10px; /* Adding some rounding for aesthetics */
-    display: block; /* Ensuring it's treated as a block element */
-    margin: 20px auto; /* Centering it on the page with auto margins */
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set a max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add some rounding for aesthetics */
+    display: block; /* Ensure it's treated as a block element */
+    margin: 20px auto; /* Center it on the page with auto margins */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
-
