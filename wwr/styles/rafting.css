@@ -123,18 +123,52 @@ section h2 {
     color: var(--sunset-orange); /* Sunset Orange for section headings */
 }
 
-.adventure-gallery {
+/* Trip Section */
+.trip-section {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: var(--sandy-beige);
+}
+
+.trip {
+    max-width: 300px;
+    margin: 20px;
     text-align: center;
 }
 
-.adventure-gallery img {
-    width: 200px;
+.trip img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Depth */
+}
+
+.trip-description {
+    padding: 20px;
+    background-color: rgba(0, 119, 190, 0.1);
+    border-radius: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--ocean-blue);
+}
+
+.adventure-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adventure-gallery .trip h3 {
+    color: var(--sunset-orange);
+    margin: 15px 0;
+}
+
+.adventure-gallery .trip-description p {
+    color: var(--ocean-blue);
 }
 
 /* Contact Us Styles */
@@ -154,6 +188,7 @@ section h2 {
     line-height: 1.6;
     color: var(--ocean-blue);
 }
+
 /* General layout styling */
 main {
     max-width: 1200px;
@@ -167,116 +202,21 @@ main {
     margin-bottom: 20px;
 }
 
-/* Company Information Section */
-section {
-    margin-bottom: 40px;
-}
-
-/* Flexbox layout for Contact Form and Map section */
-.contact-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* Styling for the map */
-.map iframe {
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    border: 0;
-}
-
-/* Styling for the contact form */
-form {
-    max-width: 600px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea,
-form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 1em;
-}
-
-form button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    font-size: 1em;
-    margin-top: 15px;
-}
-
-form button:hover {
-    background-color: #218838;
-}
-
-/* Responsive adjustments */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .contact-section {
+    nav {
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center the navigation items */
+    }
+
+    .adventure-gallery {
         flex-direction: column;
     }
-    
-    .map iframe,
-    form {
-        max-width: 100%;
+
+    .trip {
+        max-width: 90%;
     }
 }
-
-/* .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid var(--ocean-blue);
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.contact-form textarea {
-    resize: vertical; 
-    min-height: 150px; 
-}
-
-.contact-form button {
-    background-color: var(--sunset-orange);
-    color: var(--sandy-beige);
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: var(--river-green);
-} */
 
 /* Footer Styles */
 footer {
@@ -299,41 +239,3 @@ footer p {
 .social-media a {
     display: inline-block;
 }
-
-.headings {
-    text-align: center; /* Centers the text horizontally */
-    margin: 0 auto; /* Adds automatic margin to ensure it's centered */
-}
-
-h1, h2 {
-    color: var(--sunset-orange);
-}
-
-p {
-    text-align: center;
-    color: var(--ocean-blue);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column; /* Stack navigation items */
-        align-items: center; /* Center the navigation items */
-    }
-
-    .contact-form {
-        width: 90%; /* Allow form to be responsive on smaller screens */
-    }
-}
-
-/* Employee Image Styles */
-.employee-image {
-    width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Set a max width for larger screens */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add some rounding for aesthetics */
-    display: block; /* Ensure it's treated as a block element */
-    margin: 20px auto; /* Center it on the page with auto margins */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
-}
-
