@@ -154,8 +154,89 @@ section h2 {
     line-height: 1.6;
     color: var(--ocean-blue);
 }
+/* General layout styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-.contact-form {
+.headings {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Company Information Section */
+section {
+    margin-bottom: 40px;
+}
+
+/* Flexbox layout for Contact Form and Map section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styling for the map */
+.map iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    border: 0;
+}
+
+/* Styling for the contact form */
+form {
+    max-width: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+    
+    .map iframe,
+    form {
+        max-width: 100%;
+    }
+}
+
+/* .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,11 +276,11 @@ section h2 {
 
 .contact-form button:hover {
     background-color: var(--river-green);
-}
+} */
 
 /* Footer Styles */
 footer {
-    background-color: rgba(0, 119, 190, 0.8); /* Semi-transparent Ocean Blue */
+    background-color: rgba(17, 98, 145, 0.8); /* Semi-transparent Ocean Blue */
     padding: 20px;
     text-align: center;
 }
@@ -247,12 +328,12 @@ p {
 
 /* Employee Image Styles */
 .employee-image {
-    width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Set a max width for larger screens */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add some rounding for aesthetics */
-    display: block; /* Ensure it's treated as a block element */
-    margin: 20px auto; /* Center it on the page with auto margins */
+    width: 100%; /* Making the image responsive */
+    max-width: 400px; /* Setting a max width for larger screens */
+    height: auto; /* Maintaining aspect ratio */
+    border-radius: 10px; /* Adding some rounding for aesthetics */
+    display: block; /* Ensuring it's treated as a block element */
+    margin: 20px auto; /* Centering it on the page with auto margins */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
 
