@@ -328,6 +328,7 @@ p {
     }
 }
 
+/* Employee Image Container */
 .employee-gallery {
     display: flex;
     gap: 10px;
@@ -336,18 +337,11 @@ p {
     text-align: center;
 }
 
-.employee-gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 20px;
-}
-
 /* Individual Employee Image Styles */
-.employee-image {
-    width: 100%; 
+.employee-gallery img {
+    width: 100%;
     max-width: 150px; /* Smaller size for each image */
     height: auto;
-    border-radius: 10px;
-    display: block;
+    border-radius: 10px; /* Consistent border radius */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
