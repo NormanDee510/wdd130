@@ -328,7 +328,7 @@ p {
 }
 
 /* Employee Image Styles */
-.employee-image {
+/* .employee-image {
     width: 100%; 
     max-width: 400px; 
     height: auto; 
@@ -336,4 +336,22 @@ p {
     display: block; 
     margin: 20px auto; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+} */
+/* Employee Image Container */
+.employee-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centers images horizontally */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 20px;
+}
+
+/* Individual Employee Image Styles */
+.employee-image {
+    width: 100%; 
+    max-width: 150px; /* Smaller size for each image */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
